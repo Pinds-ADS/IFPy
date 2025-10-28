@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+
+  --cor-primaria: #969696;
+  --cor-secundaria: #202124;
+  --cor-branco: #ffffff;
+  --cor-btn-verde: #3fa14c;
+  --cor-btn-vermelho: #cf3034;
+  --cor-btn-azul: #3773a5;
+  --cor-btn-amarelo: #ffd647;
+}
+
