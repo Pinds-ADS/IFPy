@@ -1,14 +1,22 @@
 import './App.css'
-import {Button} from '@mui/material'
+import {Button, Typography} from '@mui/material'
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import theme from './theme'
 
 function App() {
 
   return (
-    <>
-      <h1>Hello World</h1>
+    <ThemeProvider theme={theme}>
+      <CssBaseline>
 
-      <Button variant="contained">Contained</Button>
-    </>
+        <Typography variant='h5' color='primary'>Rola</Typography>
+        <Button variant="contained" color='primary'>Contained</Button>
+        <Button variant="outlined" color='primary'>Contained</Button>
+        <Button variant="text" color='primary'>Contained</Button>
+
+      </CssBaseline>
+    </ThemeProvider>
   )
 }
 
