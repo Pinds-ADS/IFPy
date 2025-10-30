@@ -1,22 +1,26 @@
 import './App.css'
-import {Button, Typography} from '@mui/material'
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from './theme'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import HomePage from './pages/HomePage';
+import InstructionsPage from './pages/InstructionsPage';
 
 function App() {
 
   return (
+    
     <ThemeProvider theme={theme}>
       <CssBaseline>
-
-        <Typography variant='h5' color='primary'>Rola</Typography>
-        <Button variant="contained" color='primary'>Contained</Button>
-        <Button variant="outlined" color='primary'>Contained</Button>
-        <Button variant="text" color='primary'>Contained</Button>
-
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />}/>
+            <Route path="/instructions/" element={<InstructionsPage />}/>
+          </Routes>
+        </BrowserRouter>
       </CssBaseline>
     </ThemeProvider>
+
   )
 }
 

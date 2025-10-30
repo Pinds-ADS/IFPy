@@ -1,10 +1,4 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-
-
   --cor-primaria: var(#969696);
   --cor-secundaria: var(#202124);
   --cor-branco: var(#ffffff);
