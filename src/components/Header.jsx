@@ -30,7 +30,7 @@ function Header(){
         }}>
             <Box sx={{
                 display: "flex",
-                maxWidth: "1200px",
+                maxWidth: "wh",
                 mx: "auto",
                 px: 2,
                 py: 1,

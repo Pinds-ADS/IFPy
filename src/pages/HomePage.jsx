@@ -4,7 +4,7 @@ import {Box} from '@mui/material'
 
 function HomePage() {
     return (
-        <Box>
+        <Box sx={{ backgroundColor: "#212224", flexGrow: 1, minHeight: "100vh"}} >
             <Header/>
         </Box>
     )
